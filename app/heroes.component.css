@@ -1,6 +1,5 @@
 .selected {
   background-color: #CFD8DC !important;
-  background-color: rgb(0,120,215) !important;
   color: white;
 }
 .heroes {
@@ -21,7 +20,6 @@
 }
 .heroes li:hover {
   color: #607D8B;
-  color: rgb(0,120,215);
   background-color: #DDD;
   left: .1em;
 }
@@ -55,7 +53,6 @@ button {
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
-  cursor: hand;
 }
 button:hover {
   background-color: #cfd8dc;
@@ -64,6 +61,36 @@ button:hover {
 button.delete-button{
   float:right;
   background-color: gray !important;
-  background-color: rgb(216,59,1) !important;
   color:white;
+}
+/* Added by VP 10 August 2016 */
+.marker {
+  margin: 0;
+  font-style: italic;
+  font-size: small;
+  background-color: #EFF1F2;
+  padding: 1px 8px;
+  /*+border-radius: 6px;*/
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.componentMarker {
+  margin: 0;
+  font-style: italic;
+  font-size: small;
+  /*background-color: #dadada;*/
+  padding: 1px 8px;
+  /*+border-radius: 6px;*/
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+fieldset
+{
+  border: solid 1px #dadada;
+  border-radius: 6px;
+  /*background-color: #ffb73e !important;*/
 }

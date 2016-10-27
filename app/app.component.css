@@ -33,3 +33,34 @@ nav a.router-link-active {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+/* Added by VP 10 August 2016 */
+.marker {
+  margin: 0;
+  font-style: italic;
+  font-size: small;
+  background-color: #EFF1F2;
+  padding: 1px 8px;
+  /*+border-radius: 6px;*/
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.componentMarker {
+  margin: 0;
+  font-style: italic;
+  font-size: small;
+  /*background-color: #f6f6f6;*/
+  padding: 1px 8px;
+  /*+border-radius: 6px;*/
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+fieldset
+{
+  border: solid 1px #dadada;
+  border-radius: 6px;
+  /*background-color: #ffb73e !important;*/
+}
