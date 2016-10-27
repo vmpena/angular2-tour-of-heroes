@@ -2,9 +2,20 @@
   <legend class="componentMarker">heroes.component.html</legend>
 <h2>My Heroes</h2>
 <ul class="heroes">
+  <!--
+    We can use Angular event bindings to respond to any DOM event.
+
+    The syntax is simple. We surround the DOM event name in parentheses and assign
+     a quoted template statement to it.
+
+    You can also use the on- prefix alternative, known as the canonical form:
+    on-click="onSelect(hero)"
+
+    The parenthesis identify the <li> element’s click event as the target.
+    The expression to the right of the equal sign calls the component
+    method, onSelect(), passing the template input variable hero as an argument.-->
   <li *ngFor="let hero of heroes"
-      (click)="onSelect(hero)"
-      [class.selected]="hero === selectedHero">
+      (click)="viewDetail(hero)">
     <span class="hero-element">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </span>
@@ -13,10 +24,5 @@
 
 <div class="error" *ngIf="error">{{error}}</div>
 
-<div *ngIf="selectedHero">
-  <h2>
-    {{selectedHero.name | uppercase}} is my hero
-  </h2>
-  <button (click)="gotoDetail()">View Details</button>
-</div>
+
 </fieldset>

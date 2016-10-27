@@ -10,6 +10,7 @@ import { HeroService } from './hero.service';
   templateUrl: 'heroes.component.html',
   styleUrls: ['heroes.component.css']
 })
+
 export class HeroesComponent implements OnInit {
   heroes: Hero[];
   selectedHero: Hero;
@@ -38,5 +39,11 @@ export class HeroesComponent implements OnInit {
 
   gotoDetail(): void {
     this.router.navigate(['/detail', this.selectedHero.id]);
+  }
+
+  viewDetail(hero: Hero): void {
+    // console.log(hero);
+    let link = ['/detail', hero.id];
+    this.router.navigate(link);
   }
 }
